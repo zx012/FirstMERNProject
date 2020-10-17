@@ -10,13 +10,16 @@ export default function Register() {
   async function registerUser() {
     const res = fetch("http://localhost:1337/api/register", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         email,
         password,
       }),
     }).then((t) => t.json());
 
-    //console.log(res);
+    console.log(res);
   }
 
   return (
