@@ -16,7 +16,7 @@ export default function Register() {
       }),
     }).then((t) => t.json());
 
-    console.log(res);
+    //console.log(res);
   }
 
   return (
